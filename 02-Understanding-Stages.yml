@@ -14,6 +14,7 @@ stages:
     - bash: echo $(Build.BuildId)
     - bash: echo $(Build.SourceBranch)
     - bash: echo $(Build.SourcesDirectory)
+    - bash: ls -R $(Build.SourcesDirectory)
     - bash: echo $(Build.StagingDirectory)
   - job: SecondJob
     steps:
