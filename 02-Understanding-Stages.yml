@@ -13,6 +13,8 @@ stages:
     - bash: echo $(Build.BuildNumber)
     - bash: echo $(Build.BuildId)
     - bash: echo $(Build.SourceBranch)
+    - bash: echo $(Build.SourcesDirectory)
+    - bash: echo $(Build.StagingDirectory)
   - job: SecondJob
     steps:
     - bash: echo Build SecondJob  
