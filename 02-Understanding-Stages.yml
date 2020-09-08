@@ -10,8 +10,8 @@ stages:
   - job: FirstJob
     steps:
     - bash: echo Build FirstJob
-    - bash: echo $(Build.Build.Number)
-    - bash: echo $(Build.Build.Id)
+    - bash: echo $(Build.BuildNumber)
+    - bash: echo $(Build.BuildId)
     - bash: echo $(Build.SourceBranch)
   - job: SecondJob
     steps:
