@@ -15,7 +15,7 @@ stages:
     - bash: echo $(Build.SourceBranch)
     - bash: echo $(Build.SourcesDirectory)
     - bash: echo $(System.DefaultWorkingDirectory)
-    - bash: echo ls -R $(System.DefaultWorkingDirectory)
+    - bash: ls -R $(System.DefaultWorkingDirectory)
     - bash: echo $(Build.ArtifactStagingDirectory)
     - bash: java -version
     - bash: npm --version
