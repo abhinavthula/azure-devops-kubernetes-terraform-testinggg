@@ -32,7 +32,7 @@ stages:
        runOnce:
           deploy:
             steps:
-              - bash: echo deploy to QA
+              - bash: echo deploy to QAServer
 
 # steps:
 # - script: echo running on $(operatingSystem)
